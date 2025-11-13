@@ -1,0 +1,44 @@
+# ──────────────────────────────────────────────────────────────
+#  AutoVidCraft – .gitignore
+# ──────────────────────────────────────────────────────────────
+
+# === API KEYS & SECRETS (NEVER commit real keys!) ===
+config/
+config/*
+*.txt          # safety net – ignore any stray .txt files in config
+
+# === Generated / temporary media files ===
+*.mp4
+*.mp3
+*.wav
+*.avi
+*.mov
+temp*
+tmp*
+
+# === Python cache & compiled files ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# === Virtual environments ===
+venv/
+env/
+.venv/
+ENV/
+
+# === IDE / editor files ===
+.idea/
+.vscode/
+*.sublime-*
+*.swp
+*.swo
+
+# === OS junk ===
+.DS_Store
+Thumbs.db
+
+# === Pygame (used only for audio handling) ===
+pygame/
